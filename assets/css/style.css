@@ -887,15 +887,50 @@ a>.fa-brands:hover{
     gap: 1.8rem;
     justify-content: center;
 }
-.new-subject-head{
-    background-image: url(/assets/img/art/portraiture/JohnMayer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--black);
+
+
+.div1{
+    z-index: 1;    
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
 }
-.new-subject-head h1{
-    color: var(--white);
+.div1img{
+    z-index: -2;    
+    position: absolute;
+    left: 0;
+    height: 30vh;
+    object-fit: cover;
+    width: 100%;
+    transition: transform .4s; 
+    
 }
+.div1:hover .div1img{
+    
+    transform: scale(1.1);
+    
+}
+
+.div1-1{
+    height: 30vh; 
+    width: 100%;
+    margin: 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2% 10%;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 900px){
     .subject-content{
         margin: 0 5%;
@@ -987,16 +1022,15 @@ a>.fa-brands:hover{
 .toggle-panel-one.closed .fa-angle-down{
     transform: rotate(180deg) translateY(5px);
     transition: 0.3s;
-    color: var(--grey-mid);
-
+    color: var(--white);
 }
 .toggle-panel-one{
     border: none;
     width: 100%;
     background-color: transparent;
-    color: var(--grey-mid);
-    font-size: 4rem;
-    border-bottom: 1px solid var(--grey-mid);
+    color: var(--white);
+    font-size: 3rem;
+    /* border-bottom: 1px solid var(--grey-mid); */
     padding-top: 20px;
     transition: 0.3s;
 }
