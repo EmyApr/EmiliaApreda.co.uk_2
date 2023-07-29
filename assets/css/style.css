@@ -454,20 +454,28 @@ a>.fa-brands:hover{
         background-size: 90%;
         background-color: black;}
 
+.art-header-container{
+    height: 40vh;
+    overflow: hidden;
+}
+
+.art-header{
+    position: relative;
+    bottom: 70px;
+    z-index: 2;
+    color: white;
+    margin-left: 10%;
+}
+
 .art-header-video video{
+    z-index: 0;
     height: 40vh;
     object-fit: cover;
     width: 100%;
     background-color: #000;
 }
-.art-header-video .art-header{
-    color: white;
-    position: absolute;
-    top: 320px;
-    z-index: 2;
-    margin-left: 10%;
-    
-}
+
+
 
 
 /*=========================================================================================GLOBAL STYLES END=========================================================================================*/
