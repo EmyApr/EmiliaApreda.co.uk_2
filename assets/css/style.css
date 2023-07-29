@@ -153,34 +153,36 @@ text-transform: uppercase;
         background-color: var(--white);
       }
 
-.menu-button-mob a:link {
+.menu-button-mob {
         font-family: "montserrat", sans-serif;
-        padding:0.5rem 15rem;
+        padding: 10px 100px;
         background-color: var(--button-color);
+        color: var(--white);
         border-radius:3rem;
         font-size: 1rem;
         border: 0;
-        color: var(--white);
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
       }
-
+      .menu-button-mob a {
+        color: var(--white);
+      }
       .menu-button-mob a:visited {
         color: var(--white);
       }
+      .menu-button-mob:visited {
+        color: var(--white);
+      }
 
-      .menu-button-mob a:hover {
+      .menu-button-mob:hover {
         color: var(--button-color);
         background-color: var(--white);
       }
 
-      .menu-button-mob a:active{
+      .menu-button-mob:active{
         color: var(--button-color);
         background-color: var(--white);
-      }
-      .menu-button-mob {
-        padding-top: 20px;
       }
 
 .case-study-btn{
@@ -246,7 +248,7 @@ nav{
     flex-direction: row;
     background-color: var(--grey-dark);
     height: 70px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     z-index: var(--z-modal);
@@ -307,7 +309,7 @@ nav{
                 flex-direction: column;
                 align-items: center;
                 padding: 30px 0px 30px 0px;
-                width: 100%;
+                width: 100vw;
                 background-color: var(--grey-trans);
                 color: var(--white);
                 position: absolute;
@@ -346,19 +348,7 @@ nav{
                 transform: translateY(0);
                 transition: 0.3s;
             }
-            .button-mob-menu{
-                background-color: var(--button-color);
-                padding:1rem 35%;
-                border-radius:3rem;
-                border: 0;
-                color: var(--white);
-                font-family: "montserrat", sans-serif;
-                font-size: 1rem;
-                font-weight: 700;
-                letter-spacing: 2px;
-                text-transform: uppercase;  
-                margin-bottom: 20px;     
-                }
+
                
 }
 /*===========HAMBURGER===========*/
@@ -518,6 +508,7 @@ a>.fa-brands:hover{
     padding-top: 50px;
     justify-content: center;
     gap: 3rem;
+    overflow: hidden;
 }
 .about-img img{
     height: 350px;
@@ -598,10 +589,10 @@ a>.fa-brands:hover{
     padding: 4rem;
 }
 .services-container.design .services-info{
-    padding: 4rem 10% 4rem 4rem;
+    padding: 4rem 10% 4rem 10%;
 }
 .services-container.art .services-info{
-    padding: 4rem 4rem 4rem 10%;
+    padding: 4rem 10% 4rem 10%;
 }
 /* reusable list style 1 */
 .services-info .ul-1{
@@ -643,8 +634,10 @@ a>.fa-brands:hover{
 
 @media (max-width: 900px){
     .services{
-        padding: 100px 0 0 0;
         text-align: center;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
     .services-container{
         width: 100%;
@@ -655,10 +648,11 @@ a>.fa-brands:hover{
         gap: 1rem;
     }
     .services-info{
+        display: flex;
         align-items: center;
         text-align: center;
+        justify-content: center;
         width: 100%;
-        padding: 50px 0 100px 0 ;
     }
     .services-container.art{
         display: flex;
@@ -675,10 +669,18 @@ a>.fa-brands:hover{
         margin-left: 0rem;
     }
     .services-container.design .services-info{
-        padding: 3rem 5% 3rem 3rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
     }
     .services-container.art .services-info{
-        padding: 3rem 3rem 100px 5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
     }
     .services-info .ul-2{
         margin-left: 0rem;
@@ -938,6 +940,7 @@ a>.fa-brands:hover{
         align-items: center;
         padding-top: 50px;
         gap: 1rem;
+        overflow: hidden;
     }
     .subject-info{
         align-items: center;
@@ -947,6 +950,7 @@ a>.fa-brands:hover{
     }
     .subject-img img{
         height: 300px;
+        overflow: hidden;
     }
     .div1img{
         object-position: 0px 0px;
