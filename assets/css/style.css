@@ -82,6 +82,7 @@ a{
     font-weight: 700;}
 
 h1{
+    font-family: var(--body-font);
     font-size: var(--h1-font-size);
     letter-spacing: var(--title-spacing);
     font-weight: 800;    
@@ -157,33 +158,31 @@ text-transform: uppercase;
         font-family: "montserrat", sans-serif;
         padding: 10px 100px;
         background-color: var(--button-color);
-        color: var(--white);
         border-radius:3rem;
         font-size: 1rem;
         border: 0;
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
-      }
-      .menu-button-mob a {
-        color: var(--white);
-      }
-      .menu-button-mob a:visited {
-        color: var(--white);
-      }
-      .menu-button-mob:visited {
-        color: var(--white);
-      }
+    }
 
-      .menu-button-mob:hover {
-        color: var(--button-color);
-        background-color: var(--white);
-      }
+.menu-button-mob a{
+    color: var(--white);
+}
 
-      .menu-button-mob:active{
-        color: var(--button-color);
-        background-color: var(--white);
-      }
+.menu-button-mob:hover{
+    background-color: var(--white);
+}
+.menu-button-mob:hover a{
+    color: var(--button-color);
+}
+
+.menu-button-mob:visited{
+    background-color: var(--button-color);
+}
+.menu-button-mob:visited a{
+    color: var(--white);
+}
 
 .case-study-btn{
 background-color: transparent;
@@ -340,7 +339,10 @@ nav{
                 color: var(--grey-light);
             }
             .menu-icons .fa-brands:hover{
-                color: var(--button-color);
+                color: var(--white);
+            }
+            .menu-icons .fa-brands:visited{
+                color: var(--white);
             }
 
             .mobile-menu.is-open {
@@ -808,8 +810,8 @@ a>.fa-brands:hover{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 10%;
-    left: 85%;
+    top: 12%;
+    right: 20px;
     z-index: 99;
 }
 .jump-arrow:hover{
@@ -930,10 +932,16 @@ a>.fa-brands:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+    flex-wrap: wrap;
     padding: 2% 10%;
+    cursor: pointer;
 }
 
-
+.fa-angle-down{
+    font-size: 3rem;
+    position: relative;
+    top: 8px;
+}
 
 
 
