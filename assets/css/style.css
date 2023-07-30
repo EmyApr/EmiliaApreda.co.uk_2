@@ -887,9 +887,6 @@ a>.fa-brands:hover{
     max-width: 400px;
     object-fit: contain;
 }
-#illustration .subject-img img{
-    height: 310px;
-}
 .subject-info{
     max-width: 50%;
     display: flex;
@@ -898,10 +895,12 @@ a>.fa-brands:hover{
     text-align: left;
     gap: 1.8rem;
     justify-content: center;
+    font-family: var(--body-font);
+    color: var(--white);
 }
 
 
-.div1{
+.new-subject-head{
     z-index: 1;    
     position: relative;
     height: 30vh;
@@ -909,22 +908,33 @@ a>.fa-brands:hover{
     margin: 0;
     overflow: hidden;
 }
-.div1img{
+.subject-img-zoomin{
     z-index: -2;    
-    position: absolute;
-    left: 0px;
     height: 30vh;
     object-fit: cover;
     width: 100%;
     transition: transform .4s; 
-    object-position: 0px 0px;
+
     
 }
-.div1:hover .div1img{
+.new-subject-head:hover .subject-img-zoomin{
     transform: scale(1.1);
 }
+.new-subject-head:active .subject-img-zoomin{
+    transform: scale(1.1);
+}
+.div1img{
+    position: absolute;
+    left: 0px;    
+    object-position: 0px 0px;
+}
+.div2img{
+    position: absolute;
+    left: 0px;    
+    object-position: 0px -200px;
+}
 
-.div1-1{
+.subject-head-button{
     height: 30vh; 
     width: 100%;
     margin: 0 ;
@@ -941,6 +951,7 @@ a>.fa-brands:hover{
     font-size: 3rem;
     position: relative;
     top: 8px;
+    color: var(--white);
 }
 
 
@@ -971,11 +982,17 @@ a>.fa-brands:hover{
     .div1img{
         object-position: 0px 0px;
     }
+    .div2img{
+        object-position: 0px -200px;
+    }
 }      
 
 @media (min-width:1150px){
     .div1img{
-        object-position: 0px -90px;
+    object-position: 0px -90px;
+    }
+    .div2img{
+    object-position: 0px -600px;
     }
 }
 /*=========Dropdown section===========*/
@@ -1058,7 +1075,6 @@ a>.fa-brands:hover{
     background-color: transparent;
     color: var(--white);
     font-size: 3rem;
-    /* border-bottom: 1px solid var(--grey-mid); */
     padding-top: 20px;
     transition: 0.3s;
 }
@@ -1081,7 +1097,8 @@ a>.fa-brands:hover{
 .toggle-panel-two.closed .fa-angle-down{
     transform: rotate(180deg) translateY(5px);
     transition: 0.3s;
-    color: var(--grey-mid);
+    top: 8px;
+    color: var(--white);
 
 }
 .toggle-panel-two{
@@ -1090,7 +1107,6 @@ a>.fa-brands:hover{
     background-color: transparent;
     color: var(--grey-mid);
     font-size: 4rem;
-    border-bottom: 1px solid var(--grey-mid);
     padding-top: 20px;
     transition: 0.3s;
 }
