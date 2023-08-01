@@ -207,7 +207,34 @@ cursor: pointer;
     position: absolute;
     z-index: -1;
 }
-
+.coming-soon-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 10%;
+    height: 90vh;
+}
+.coming-soon-img{
+max-width: 60%;
+}
+.coming-soon-img-elipses{
+    max-width: 30%;
+}
+@media (max-width: 770px){
+    .coming-soon-banner{
+        gap: 50px;
+        margin: 0 10%;
+        height: 95vh;
+    }
+    .coming-soon-img{
+    max-width: 90%;
+    }
+    .coming-soon-img-elipses{
+        max-width: 40%;
+    }
+}
 /*==============REUSABLE MOBILE CSS CLASSES=============*/
 @media (max-width: 770px){
     h1{
