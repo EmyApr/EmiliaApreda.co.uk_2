@@ -797,6 +797,8 @@ a>.fa-brands:hover{
 .portfolio{
     padding: 100px 0 0 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .jump-arrow{
     color: var(--grey-trans);
@@ -832,7 +834,7 @@ a>.fa-brands:hover{
     row-gap: 0.5rem;
     column-gap: 2rem;
     border-bottom:  1px solid var(--grey-light);
-    padding: 0 25% 50px 25%;
+    padding: 0 25% 100px 25%;
 }
 .shortcut-menu-title{
     padding-bottom: 1rem;
@@ -854,14 +856,23 @@ a>.fa-brands:hover{
     color: var(--black);
     cursor: pointer;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200%;
+    visibility: hidden;
+}
+
+
 @media (max-width: 1500px){
     .shortcut-menu{
-        padding: 0 10% 50px 10%;
+        padding: 0 10% 100px 10%;
     }
 }
 @media (max-width: 768px){
     .shortcut-menu{
-        padding: 0 5% 50px 5%;
+        padding: 0 5% 75px 5%;
         column-gap: 1rem;
     }
     .shortcut-menu-title{
@@ -873,14 +884,14 @@ a>.fa-brands:hover{
     }
 }
 /*=========Subject section - GENERAL============*/
-.subject-content{
-    margin: 0 10%;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 50px 0 0 0;
-    justify-content: space-between;
-    gap: 3rem;
+.subject-section{
+    padding-bottom: 50px;
 }
+.subject-section+ #drawing-videos{
+    padding: 0 ;
+    background-color: #000;
+}
+
 .subject-img img{
     height: 350px;
     width: auto;
@@ -913,7 +924,8 @@ a>.fa-brands:hover{
     height: 30vh;
     object-fit: cover;
     width: 100%;
-    transition: transform .4s; 
+    transition: transform .5s; 
+    overflow: hidden ;
 
     
 }
@@ -970,15 +982,7 @@ a>.fa-brands:hover{
 
 
 @media (max-width: 900px){
-    .subject-content{
-        margin: 0 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 50px;
-        gap: 1rem;
-        overflow: hidden;
-    }
+
     .subject-info{
         align-items: center;
         text-align: center;
@@ -1001,6 +1005,7 @@ a>.fa-brands:hover{
     .div4img{
         object-position: 0px 0px;
     }
+
 }      
 
 @media (min-width:1150px){
@@ -1016,6 +1021,13 @@ a>.fa-brands:hover{
     .div4img{
     object-position: 0px -90px;
     }
+    .portfolio{
+        padding: 100px 5% 0 5%;
+}
+.subject-section+ #drawing-videos{
+    padding-bottom: 50px;
+    background-color: white;
+}
 }
 
 @media (max-width:530px){
@@ -1025,6 +1037,21 @@ a>.fa-brands:hover{
         justify-content: center;
         align-items: center;
         padding: 2% 5%;
+    }
+    .new-subject-head:hover .subject-img-zoomin{
+        transform: none;
+    }
+    .new-subject-head:active .subject-img-zoomin{
+        transform: none;
+    }
+}
+
+@media (pointer:coarse) {
+    .new-subject-head:hover .subject-img-zoomin{
+        transform: none;
+    }
+    .new-subject-head:active .subject-img-zoomin{
+        transform: none;
     }
 }
 
