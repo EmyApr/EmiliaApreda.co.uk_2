@@ -508,13 +508,13 @@ a>.fa-brands:hover{
         left: 90%;
 }
 .about{
-    padding: 100px 0 50px 0;
+    padding: 100px 0 100px 0;
     text-align: center;
 }
 .about-container{
     margin: 0 10%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding-top: 50px;
     justify-content: center;
     gap: 3rem;
@@ -530,7 +530,6 @@ a>.fa-brands:hover{
     align-items: center;
     justify-content: center;
     text-align: left;
-
 }
 @media (max-width: 768px){
     .about-container{
@@ -558,8 +557,8 @@ a>.fa-brands:hover{
 .services .titlebar{
     display: flex;
     justify-content: center;
-    background-color: rgba(241, 241, 241, 0.5);
-    
+    background-color: var(--button-color); 
+    margin-bottom: 150px;
 }
 .services .titlebar h1{
     background-color: var(--white);
@@ -569,22 +568,18 @@ a>.fa-brands:hover{
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
-    padding: 150px 0 0 0;
+    padding: 0px 10% 0px 10%;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
-.services-container.design{
-    padding-bottom:100px;
-}
-.services-img img,video{
-    height: 50%;
-}
+
+
 .services-img img,video{
     width: 600px;
 }
 .services-img img{
-    height: 50%;
+    width: 600px;
 }
 
 .services-info{
@@ -593,28 +588,22 @@ a>.fa-brands:hover{
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    gap: 1.8rem;
+    gap: 1.5rem;
     justify-content: center;
     background-color: rgba(241, 241, 241, 0.5);
     padding: 4rem;
+    
 }
-.services-container.design .services-info{
-    padding: 4rem 10% 4rem 10%;
-}
-.services-container.art .services-info{
-    padding: 4rem 10% 4rem 10%;
-}
+
 /* reusable list style 1 */
 .services-info .ul-1{
     margin-left: 2rem;
     line-height: 1.5rem;
-    padding-bottom: 2rem;
 }
 /* reusable list style 2 - with headings */
 .services-info .ul-2{
     margin-left: 2rem;
     line-height: 1.5rem;
-    padding-bottom: 2rem;
     margin-top: -0.8rem;
 }
 .services-info .ul-2 li{
@@ -622,22 +611,24 @@ a>.fa-brands:hover{
 }
 .services-container.art{
     flex-direction: row;
-    border-top: 1px solid var(--grey-extralight);
+}
+.services-container.design{
+    padding-bottom: 50px;
 }
 @media (max-width: 1350px){
     .services-img img,video{
-        width: 600px;
+        width: 500px;
     }
-    .services-container{
-        gap: 2rem;
+    .services-img img{
+        width: 500px;
     }
 } 
 @media (max-width: 1200px){
     .services-img img,video{
-        width: 500px;
+        width: 350px;
     }
-    .services-container{
-        gap: 1rem;
+    .services-img img{
+        width: 350px;
     }
 } 
 
@@ -647,15 +638,15 @@ a>.fa-brands:hover{
         text-align: center;
         overflow: hidden;
         margin: 0;
-        padding: 0;
+        padding: 100px 0;
     }
     .services-container{
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        padding-top: 100px;
         gap: 1rem;
+        padding: 100px 0%;
     }
     .services-info{
         display: flex;
@@ -697,7 +688,11 @@ a>.fa-brands:hover{
 }  
 .services-info .ul-1{
     margin-left: 0rem;
-}       }
+}       
+.services .titlebar {
+    margin-bottom: 50px;
+}
+}
 
   
 /*=======Testimonials section=======*/
@@ -705,7 +700,6 @@ a>.fa-brands:hover{
     padding: 100px 5% 100px 5%;
     text-align: left;
     background-color: var(--grey-light);
-    margin-top: 50px;
 }
 .section-title{
     text-align: center;
