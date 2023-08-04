@@ -821,9 +821,9 @@ a>.fa-brands:hover{
     flex-direction: column;
 }
 .jump-arrow{
-    color: var(--grey-trans);
+    color: var(--button-color);
     border-radius: 50%;
-    background-color: rgba(224, 224, 224, 0.5);
+    background-color: rgba(250, 250, 250, 0.9);
     font-size: 2.3rem;
     width: 3.5rem;
     height: 3.5rem;
@@ -832,8 +832,8 @@ a>.fa-brands:hover{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 12%;
-    right: 20px;
+    bottom: 15%;
+    right: 30px;
     z-index: 99;
 }
 .jump-arrow:hover{
@@ -854,32 +854,39 @@ a>.fa-brands:hover{
 /*==========SHORTCUT section============*/
 .shortcut-menu{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    border-bottom:  1px solid var(--grey-light);
+    padding: 100px 10% 30px 10%;
+}
+.shortcuts{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     row-gap: 0.5rem;
-    column-gap: 2rem;
-    border-bottom:  1px solid var(--grey-light);
-    padding: 0 25% 100px 25%;
+    column-gap: 0.8rem;
 }
 .shortcut-menu-title{
     padding-bottom: 1rem;
 }
 .shortcut-menu-link{
-        background-color: var(--grey-extralight);
+        background-color: var(--white);
+        border: 2px solid rgba(224, 224, 224, 0.5);
         padding:0.5rem 2rem;
-        border-radius:3rem;
-        border: 0;
-        color: var(--black);
+        border-radius: 3rem;
+        color: var(--grey-dark);
         font-family: "montserrat", sans-serif;
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 2px;
         text-transform: uppercase;        
 }
 .shortcut-menu-link:hover{
-    background-color: var(--grey-light);
+    background-color: rgba(224, 224, 224, 0.5);
     color: var(--black);
     cursor: pointer;
 }
@@ -893,22 +900,18 @@ a.anchor {
 
 
 @media (max-width: 1500px){
-    .shortcut-menu{
-        padding: 0 10% 100px 10%;
-    }
+
 }
 @media (max-width: 768px){
     .shortcut-menu{
-        padding: 0 5% 75px 5%;
-        column-gap: 1rem;
-    }
-    .shortcut-menu-title{
-        padding-bottom: 0.9rem;
-    }
-    .shortcut-menu-link{
-            font-size: 0.75rem;
-            padding:0.4rem 1.25rem;
-    }
+    padding: 50px 5% 30px 5%;
+    text-align: center;
+    justify-content: center;
+} 
+.shortcuts{
+    text-align: center;
+    justify-content: center;
+}
 }
 /*=========Subject section - GENERAL============*/
 .subject-section{
@@ -1107,6 +1110,9 @@ a.anchor {
         height: 280px;
         object-fit: cover;
         background-color: #000;
+}
+.case-study-img.imgtop{
+    object-position: 0 0 ;
 }
 .case-study-vid{
     object-fit: contain;

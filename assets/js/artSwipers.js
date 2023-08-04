@@ -102,7 +102,7 @@
         slidesOffsetBefore:50,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
         spaceBetween: 50,
         slidesOffsetAfter:60,
         slidesOffsetBefore:60,
@@ -171,13 +171,13 @@
         slidesOffsetBefore:60,
       },
       1600: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         spaceBetween: 50,
         slidesOffsetAfter:70,
         slidesOffsetBefore:70,
       },
       1800: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 50,
         slidesOffsetAfter:70,
         slidesOffsetBefore:70,
