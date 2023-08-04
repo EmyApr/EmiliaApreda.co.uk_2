@@ -460,10 +460,12 @@ a>.fa-brands:hover{
     height: 40vh;
     overflow: hidden;
 }
-
-.art-header{
+.h1-thin {
+    font-family: var(--body-font);
+    font-size: 4rem;
+    font-weight: 300;
     position: relative;
-    bottom: 70px;
+    bottom: 86px;
     z-index: 2;
     color: white;
     margin-left: 10%;
@@ -476,9 +478,33 @@ a>.fa-brands:hover{
     width: 100%;
     background-color: #000;
 }
-
-
-
+@media (min-width:800px){
+    .h1-thin {
+        font-size: 6rem;
+        bottom: 117px;
+    }
+}
+@media (min-width:900px){
+    .h1-thin {
+        font-size: 6rem;
+        bottom: 97px;
+    }
+}
+@media (min-width:1150px){
+    .hero-short{
+        height:50vh;
+    }
+    .art-header-container{
+        height: 50vh;
+    }
+    .art-header-video video{
+        height: 50vh;
+    }
+    .h1-thin{
+        font-size: 6rem;
+        bottom: 96px;
+    }
+}
 
 /*=========================================================================================GLOBAL STYLES END=========================================================================================*/
 
@@ -1023,7 +1049,7 @@ a.anchor {
     object-position: 0px -150px;
     }
     .portfolio{
-        padding: 100px 5% 0 5%;
+        padding: 100px 10% 0 10%;
     }
 
 }
