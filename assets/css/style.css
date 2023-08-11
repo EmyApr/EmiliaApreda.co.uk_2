@@ -186,7 +186,7 @@ text-transform: uppercase;
 
 .case-study-btn{
 background-color: transparent;
-margin-top: 1rem;
+padding-top: 5px;
 text-align: left;
 border: 0;
 color: var(--button-color);
@@ -194,12 +194,15 @@ font-family: "montserrat", sans-serif;
 font-size: 0.9rem;
 font-weight: 700;
 letter-spacing: 2px;
-text-transform: uppercase;        
+text-transform: uppercase; 
+cursor: pointer       
 }
 .case-study-btn:hover{
 color: var(--black); 
-cursor: pointer;
 }
+.case-study-btn:visited{
+    color: var(--black); 
+    }
 .line-accent{
     width: 1px;
     height: 1000px;
@@ -445,19 +448,17 @@ a>.fa-brands:hover{
 
 }
 /*===========Hero short section===========*/
-.hero-short{
-
-        background-image: url(/assets/img/BannerImage.png);
-        height:40vh;
-        background-attachment: cover;
-        background-position-y: 100px;
-        background-position-x: center;
-        background-repeat: no-repeat;
-        background-size: 90%;
-        background-color: black;}
 
 .art-header-container{
     height: 40vh;
+    overflow: hidden;
+}
+.design-header-container{
+    height: 40vh;
+    overflow: hidden;
+}
+.contact-header-container{
+    height: 50vh;
     overflow: hidden;
 }
 .h1-thin {
@@ -470,7 +471,16 @@ a>.fa-brands:hover{
     color: white;
     margin-left: 10%;
 }
-
+.h1-thin-centered{
+    font-family: var(--body-font);
+    font-size: 4rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 86px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
 .art-header-video video{
     z-index: 0;
     height: 40vh;
@@ -478,29 +488,80 @@ a>.fa-brands:hover{
     width: 100%;
     background-color: #000;
 }
+
+.design-header-video video{
+    z-index: 0;
+    height: 40vh;
+    object-fit:contain;
+    object-position: 50% 50%;
+    width: 100%;
+    background-color: #000;
+}
+.contact-header-video video{
+    z-index: 0;
+    height: 50vh;
+    object-fit:contain;
+    object-position: 50% 50%;
+    width: 100%;
+    background-color: #000;
+}
+
 @media (min-width:800px){
     .h1-thin {
-        font-size: 6rem;
-        bottom: 117px;
+        font-size: 4rem;
+        bottom: 86px;
     }
+    .h1-thin-centered {
+        font-size: 4rem;
+        bottom: 86px;
+    }
+    .contact-header-container{
+        height: 60vh;
+    }
+    .contact-header-video video{
+        height: 60vh;}
 }
 @media (min-width:900px){
     .h1-thin {
-        font-size: 6rem;
-        bottom: 97px;
+        font-size: 4rem;
+        bottom: 66px;
     }
+    .h1-thin-centered {
+        font-size: 4rem;
+        bottom: 66px;
+    }
+    .contact-header-container{
+        height: 60vh;
+    }
+    .contact-header-video video{
+        height: 60vh;}
+
 }
 @media (min-width:1150px){
-    .hero-short{
-        height:50vh;
-    }
+
     .art-header-container{
         height: 50vh;
     }
     .art-header-video video{
         height: 50vh;
     }
+    .design-header-container{
+        height: 60vh;
+    }
+    .design-header-video video{
+        height: 60vh;
+    }
+    .contact-header-container{
+        height: 60vh;
+    }
+    .contact-header-video video{
+        height: 60vh;
+    }
     .h1-thin{
+        font-size: 6rem;
+        bottom: 96px;
+    }
+    .h1-thin-centered {
         font-size: 6rem;
         bottom: 96px;
     }
@@ -898,10 +959,6 @@ a.anchor {
     visibility: hidden;
 }
 
-
-@media (max-width: 1500px){
-
-}
 @media (max-width: 768px){
     .shortcut-menu{
     padding: 50px 5% 30px 5%;
@@ -920,7 +977,6 @@ a.anchor {
 .subject-section+ #drawing-videos{
     padding: 0 ;
 }
-
 .subject-img img{
     height: 350px;
     width: auto;
@@ -938,8 +994,6 @@ a.anchor {
     font-family: var(--body-font);
     color: var(--white);
 }
-
-
 .new-subject-head{
     z-index: 1;    
     position: relative;
@@ -964,25 +1018,18 @@ a.anchor {
 .new-subject-head:active .subject-img-zoomin{
     transform: scale(1.1);
 }
-.div1img{
+.subject-img-left{
     position: absolute;
-    left: 0px;    
-    object-position: 0px 0px;
+    display: flex;
+    align-items: left;
+    justify-self: center;
 }
-.div2img{
+.subject-img-centered{
     position: absolute;
-    left: 0px;    
-    object-position: 0px 0px;
-}
-.div3img{
-    position: absolute;
-    left: 0px;    
-    object-position: 0px 0px;
-}
-.div4img{
-    position: absolute;
-    left: 0px;    
-    object-position: 0px -90px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    
 }
 
 .subject-head-button{
@@ -996,6 +1043,7 @@ a.anchor {
     flex-wrap: wrap;
     padding: 2% 10%;
     cursor: pointer;
+    box-shadow: 0px -100px 1000px  inset #00000069;
 }
 
 .fa-angle-down{
@@ -1004,15 +1052,7 @@ a.anchor {
     top: 8px;
     color: var(--white);
 }
-
-
-
-
-
-
-
 @media (max-width: 900px){
-
     .subject-info{
         align-items: center;
         text-align: center;
@@ -1023,38 +1063,16 @@ a.anchor {
         height: 300px;
         overflow: hidden;
     }
-    .div1img{
-        object-position: 0px 0px;
+    .subject-img video{
+        height: 300px;
+        overflow: hidden;
     }
-    .div2img{
-        object-position: 0px 0px;
-    }
-    .div3img{
-        object-position: 0px 0px;
-    }
-    .div4img{
-        object-position: 0px 0px;
-    }
-
 }      
 
 @media (min-width:1150px){
-    .div1img{
-    object-position: 0px -90px;
-    }
-    .div2img{
-    object-position: 0px -90px;
-    }
-    .div3img{
-    object-position: 0px -90px;
-    }
-    .div4img{
-    object-position: 0px -150px;
-    }
     .portfolio{
         padding: 100px 10% 0 10%;
     }
-
 }
 
 @media (max-width:530px){
@@ -1071,9 +1089,6 @@ a.anchor {
     .new-subject-head:active .subject-img-zoomin{
         transform: none;
     }
-    .div4img, .div2img{
-        object-position: -50px 0px;
-    }
 }
 
 @media (pointer:coarse) {
@@ -1087,7 +1102,7 @@ a.anchor {
 /*=========Dropdown section===========*/
 .subject-pullout{
         padding: 50px 5%;
-        background-color: var(--grey-extralight);
+        background-color: var(--grey-mid);
         transition: 0.3s;
 }
 .case-study-tray{
@@ -1103,6 +1118,8 @@ a.anchor {
         background-color: var(--white);
         border-radius: 0.6rem;
         overflow: hidden;
+        cursor: grab;
+        box-shadow: 0px 0px 8px #00000018;
 }
 
 .case-study-img{
@@ -1113,6 +1130,12 @@ a.anchor {
 }
 .case-study-img.imgtop{
     object-position: 0 0 ;
+}
+.case-study-img.imgright{
+    object-position: right 0px ;
+}
+.case-study-img.imgcentre{
+    object-fit: contain;
 }
 .case-study-vid{
     object-fit: contain;
@@ -1126,21 +1149,44 @@ a.anchor {
         text-align: left;
         gap: 0.5rem;
         padding: 1.7rem 1.5rem;
+        cursor: grab;
+}
+.case-study-info a{
+    color: var(--button-color);
+    font-weight: 700;
+}
+.case-study-info a:hover{
+    color: var(--black);
 }
 .case-study-title{
         font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
+        padding-bottom: 8px;
 }
 .case-study-date{
         color: #969696;
         font-weight: 700;
         letter-spacing: 4px;
 }
+.case-study-desc{
+    font-size: 0.8rem;
+    color: #747474;
+    line-height: 1.05rem;
+}
+.case-study-credit-btn p{
+    font-size: 0.75rem;
+    color:#616161;
+}
+.case-study-credit-btn {
+    padding-top: 1rem;
+}
 .swiper-wrapper{
         margin-bottom: 4rem;
 }
+
+
 @media (max-width: 768px){
 
 .case-study-title{
@@ -1148,6 +1194,10 @@ a.anchor {
 }
 .case-study-info{
     padding: 1.5rem 1.3rem;
+}
+.case-study-desc{
+    font-size: 0.7rem;
+    line-height: 1rem;
 }
 }
 /*======PANEL 1======*/
