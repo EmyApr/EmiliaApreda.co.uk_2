@@ -575,16 +575,65 @@ a>.fa-brands:hover{
     font-weight: 700;
 }
 /*===========Hero section===========*/
-.hero-homepage{
-    background-image: url(/assets/img/BannerImage.png);
-    height:100vh;
-    background-attachment: fixed;
-    background-position-y: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-color: black;
+.hero-tagline{
+    position: absolute;
+    z-index: 3;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding:0 10%;
 }
+.hero-tagline h1{
+    color: var(--white);
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}
+#hero-background-video{
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+@media (max-width: 1210px){
+    .hero-tagline h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 900px){
+    .hero-tagline h1{
+        font-size: 2.2rem;
+    }
+}    
+@media (max-width: 768px){
+    .hero-tagline{
+        height: 85vh;
+        align-items: end;
+        justify-content: center;
+    }
+    .hero-tagline h1{
+        font-size: 2.4rem;
+        text-align: left;
+    }
+    #hero-background-video{
+    height: 90vh;
+    object-position: 78% 0;
+}
+}
+@media (max-width: 568px){
+    .hero-tagline h1{
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+    #hero-background-video{
+        object-position: 72%;
+    }
+    }
 /*==========About section===========*/
 .line1{
         top: 900px;
