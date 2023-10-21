@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--===============SWIPER CSS================-->
-<link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
-<!--===============MAIN CSS================-->
-<link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===============SWIPER CSS================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
+    <!--===============MAIN CSS================-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<title>Emilia Apreda</title>
-<link rel="icon" type="image/x-icon" href="assets/img/LOGO_FAVICON.png">
-</head>
+    <link rel="stylesheet" href="assets/css/filterstyles.css">
+    
+    <title>Emilia Apreda</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/LOGO_FAVICON.png">
+    </head>
 <body>  
 <!--===============NAV BAR================-->
 <header>
@@ -25,8 +27,8 @@
         </div>
         <ul class="main-menu">
             <li class="menu-item"><a  href="/about.html">ABOUT</a></li>
-            <li class="menu-item"><a  href="/work.html">WORK</a></li>
-            <li class="menu-item active-link"><a  href="/contact.html">CONTACT</a></li>
+            <li class="menu-item active-link"><a  href="/work.html">WORK</a></li>
+            <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>
         </ul>
         <button class="hamburger">
             <span></span>
@@ -36,8 +38,8 @@
         <ul class="mobile-menu">
             <li class="menu-item"><a href="/index.html">HOME</a></li>
             <li class="menu-item"><a  href="/about.html">ABOUT</a></li>
-            <li class="menu-item"><a  href="/work.html">WORK</a></li>
-            <li class="menu-item active-link"><a  href="/contact.html">CONTACT</a></li>   
+            <li class="menu-item active-link"><a  href="/work.html">WORK</a></li>
+            <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>   
     
             <div class="menu-icons">
                 <a target="_blank" href="https://www.facebook.com/EmiliaCreative/"><i class="fa-brands fa-facebook"></i></a>
@@ -48,48 +50,33 @@
         </ul>
 
     </nav>
-   
-
 </header>
 <!--===============MAIN================-->
 <main class="main">
-    <!--=========HERO==========-->    
-    <div class="contact-header-container">
-        
-        <div class="contact-header-video">
-            <video autoplay loop>
-                <source src="assets/img/logoreveal.mp4">
-            </video>
-            
+
+        <div class="work-indiv-header-container workimgbanner-1">
+            <h1 class="h1-work-overbanner">BULLET PORTRAIT</h1>            
         </div>
-        <h1 class="h1-thin-centered">CONTACT</h1>
-    </div>
-    <!--=========SERVICES==========--> 
-    <div class="contact" id="about">
-        <h1>GET IN TOUCH</h1>
-        <div class="line-accent line3"></div>
-            <div class="contact-container">
-                <div class="contact-form">                    
-                    <form name="contact-me" method="POST" data-netlify="true">
-                        <p>
-                          <label class="form-title"><h5> YOUR NAME</h5><input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                          <label class="form-title"><h5>YOUR EMAIL ADDRESS</h5><input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label class="form-title"><h5>LEAVE ME A MESSAGE</h5><textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button  class="button" type="submit">Send</button>
-                        </p>
-                      </form>
-                </div>
-            </div>
 
-    </div>
+      
 
-    <!--======FOOTER=========--> 
+        <a class="back-work-indiv"><i class="fa-solid fa-chevron-left"></i>  Back to work</a>
+
+
+  <video loop="loop" autoplay="autoplay" muted="muted">
+                <source src="assets/img/design/3d-concepting/3D_BulletPortrait.mp4" type="video/mp4">
+        </video>
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer-section">
             <div class="footer-left">
@@ -110,11 +97,15 @@
     </footer>
 
 </main>
-     <!--===============MAIN JS================-->
-     <script src="assets/js/mobileMenu.js"></script>
-     <script src="assets/js/main.js"></script> 
-     
-         <!--===============UNICONS================-->
+
+
+    <!--===============MAIN JS================-->
+    <script src="assets/js/mobileMenu.js"></script>
+    <script src="assets/js/main.js"></script>    
+    <script src="assets/js/filterscript.js"></script>
+    <!--===============UNICONS================-->
     <script src="https://kit.fontawesome.com/908f9708c8.js" crossorigin="anonymous"></script>
+    <!--===============SWIPER JS================-->
+    
 </body>
 </html>

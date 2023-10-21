@@ -457,6 +457,14 @@ a>.fa-brands:hover{
     height: 40vh;
     overflow: hidden;
 }
+.work-header-container{
+    position: relative;
+    top: 70px;
+    height: 30vh;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
 .contact-header-container{
     height: 50vh;
     overflow: hidden;
@@ -470,6 +478,14 @@ a>.fa-brands:hover{
     z-index: 2;
     color: white;
     margin-left: 10%;
+}
+.h1-work {
+    font-family: var(--body-font);
+    font-size: 4rem;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 .h1-thin-centered{
     font-family: var(--body-font);
@@ -520,6 +536,10 @@ a>.fa-brands:hover{
     }
     .contact-header-video video{
         height: 60vh;}
+
+    .work-header-container{
+        height: 40vh;
+        padding-left:10%;}
 }
 @media (min-width:900px){
     .h1-thin {
@@ -574,6 +594,9 @@ a>.fa-brands:hover{
     color: var(--button-color);
     font-weight: 700;
 }
+.main.home{
+    background-color: #000;
+}
 /*===========Hero section===========*/
 .hero-tagline{
     position: absolute;
@@ -594,7 +617,7 @@ a>.fa-brands:hover{
 }
 #hero-background-video{
     position: relative;
-    z-index: -1;
+    z-index: 0;
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -612,9 +635,9 @@ a>.fa-brands:hover{
 }    
 @media (max-width: 768px){
     .hero-tagline{
-        height: 80vh;
+        height: 83vh;
         align-items: end;
-        justify-content: center;
+        justify-content: start;
     }
     .hero-tagline h1{
         font-size: 2.4rem;
@@ -1531,3 +1554,45 @@ a.anchor {
         height: 100px;
         }
 } 
+
+/* Work individual page style */
+
+.back-work-indiv{
+    border: 0;
+    background-color: none;
+    color: var(--white);
+    font-family: "montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+}
+
+.work-indiv-header-container{
+position: relative;
+top: 70px;
+height: 30vh;
+display: flex;
+align-items: center;
+width: 100%;
+overflow: hidden;
+}
+
+.h1-work-overbanner {
+    font-family: var(--body-font);
+    font-size: 4rem;
+    font-weight: 300;
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    padding-left: 10%;
+}
+
+.workimgbanner-1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-color: #000000;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(/assets/img/design/3d-concepting/3D_BulletPortrait.jpg);
+}
