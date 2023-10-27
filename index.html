@@ -15,28 +15,50 @@
 <body>  
 <!--===============NAV BAR================-->
 <header>
-    <nav>
+
     
         <div class="logo">
             <link to="/" class="link-home">
                 <img class="logo-img" src="assets/img/LOGO_WEBSITE WHITE.png"/>
             </link>
             <span class="site-name"><a  href="/index.html">EMILIA<br>APREDA</a></span>
-        </div>
-        <ul class="main-menu">
-            <li class="menu-item"><a  href="/about.html">ABOUT</a></li>
-            <li class="menu-item"><a  href="/work.html">WORK</a></li>
-            <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>
-        </ul>
+        </div>    
+        <nav>
+            <ul class="nav-menu">
+                <li class="work"><a href="/work.html">WORK</a>
+                  <ul class="work-drop-down">
+                    <li><a href="#">WEB DESIGN</a></li>
+                    <li><a href="#">MOTION GRAPHICS</a></li>
+                    <li><a href="#">BRANDING</a></li>
+                    <li><a href="#">EVENT DESIGN</a></li>
+                    <li><a href="#">ILLUSTRATION</a></li>
+                    <li><a href="#">PRINT MEDIA</a></li>
+                    <li><a href="#">REPORT DESIGN</a></li>
+                    <li><a href="#">3D DESIGN</a></li>
+                    <li><a href="#">PERSONAL ART</a></li>
+                  </ul>
+                </li>
+                <li><a href="/contact.html">CONTACT</a></li>
+              </ul>
         <button class="hamburger">
             <span></span>
             <span></span>
             <span></span>   
         </button>
         <ul class="mobile-menu">
-            <li class="menu-item active-link"><a href="/index.html">HOME</a></li>
-            <li class="menu-item"><a  href="/about.html">ABOUT</a></li>
-            <li class="menu-item"><a  href="/work.html">WORK</a></li>
+            <li class="menu-item"><a  href="/work.html">WORK</a>
+                <ul class="mob-sub-menu">
+                    <li><a href="">WEB DESIGN</a></li>
+                    <li><a href="#">MOTION GRAPHICS</a></li>
+                    <li><a href="#">BRANDING</a></li>
+                    <li><a href="#">EVENT DESIGN</a></li>
+                    <li><a href="#">ILLUSTRATION</a></li>
+                    <li><a href="#">PRINT MEDIA</a></li>
+                    <li><a href="#">REPORT DESIGN</a></li>
+                    <li><a href="#">3D DESIGN</a></li>
+                    <li><a href="#">PERSONAL ART</a></li>
+                </ul>
+            </li>
             <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>   
     
             <div class="menu-icons">
@@ -55,7 +77,10 @@
 <main class="main home">
     <!--=========HERO==========-->    
     <div class="hero-homepage">
-        <div class="hero-tagline"><h1>IDEATION TO <br><strong>CREATION</strong></h1></div>
+        <div class="hero-tagline"><h1>IDEATION TO <br><strong>CREATION</strong></h1><br><h2>Multimedia<br>Graphic Design</h2>
+        <a href="/work.html" ><button class="hero-button button">VIEW WORK</button></a>
+    </div>
+
         <video id="hero-background-video" autoplay loop muted poster="assets/img/EA_LOGO_3D_animated_still.jpg">
             <source src="assets/img/EA_LOGO_3D_animated2.mp4" type="video/mp4">
         </video>
@@ -66,6 +91,11 @@
         <h1 class="h1-welcome">WELCOME</h1>
         <p class="welcome-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quibusdam quaerat deleniti omnis ipsam alias nisi porro aspernatur excepturi in tempora suscipit doloribus, ullam quisquam beatae non similique. Illo sunt sit dolor mollitia magnam optio, consectetur repudiandae iusto quibusdam fugiat dolorem in odio nisi, soluta harum ipsam veniam illum eligendi.</p>
     </div>
+    <!--=========DISCIPLINES==========--> 
+    <div class="disciplines-section">
+        <div class=""></div>
+    </div>
+    
     <!--======TESTIMONIALS=========--> 
     <section class="testimonials section">
         <h1 class="section-title">TESTIMONIALS</h1>
@@ -111,6 +141,18 @@
         </div>
 
     </section>
+<!--=========CLIENTS==========--> 
+    <section class="client-section">
+        <h5>CLIENTS</h5>
+        <div class="client-image-banner">
+            <a target="_blank" href="https://www.compliapps.com/"><img width="120px" src="/assets/img/Compliapps.png"></a>
+            <a target="_blank" href="https://www.superluminalsoftware.co.uk/"><img width="120px" src="/assets/img/SLS.png"></a>
+            <a target="_blank" href="https://acid.works/"><img width="80px" src="/assets/img/AW.png"></a>
+            <a target="_blank" href="https://www.cncf.io/"><img width="120px" src="/assets/img/cncf-white.png"></a>
+            <a target="_blank" href="https://o3de.org/"><img width="120px" src="/assets/img/O3DE.png"></a>
+        </div>
+    </section>
+
     <!--======FOOTER=========--> 
     <footer class="footer">
         <div class="footer-section">
