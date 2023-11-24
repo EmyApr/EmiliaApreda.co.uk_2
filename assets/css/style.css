@@ -301,7 +301,9 @@ z-index: 1;
     z-index: -2;
   }
   .nav-menu .work-drop-down a{
-    font-size: 12px;
+    letter-spacing: 2pt;
+    font-size: 16px;
+    line-height: 10px;
   }
   .work:hover ul{
     display: block;
@@ -349,7 +351,7 @@ z-index: 1;
             }
             .menu-item a{
                 font-size: 1.6rem;
-                    letter-spacing:var(--title-spacing) ;
+                    letter-spacing:2pt ;
                     color: var(--white);
                     cursor: pointer;
                     display: flex;
@@ -762,8 +764,122 @@ z-index: 1;
 .disciplines-section{
     background-color: #0B0B0B;
     display: block;
-    height: 100vh;
+    width: 100%;
 }
+
+.disciplines-section .tabs{
+    padding:150px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .disciplines-section .tabs .tab-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left:5px solid #464646;
+    padding-left: 40px;
+    width: 600px;
+    height: 500px;
+
+  }
+
+  .disciplines-section .tabs .tab-header > div, .tabs .tab-header > div a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height:50px;
+    font-size: 30pt;
+    letter-spacing:2pt;
+    font-weight:300;
+    padding:10px;
+    color:#ADADAD;
+    cursor:pointer;
+    text-decoration:none;
+  }
+  .disciplines-section .tabs .tab-header > div:hover a{
+    color:#fff
+  }
+  .disciplines-section .tabs .tab-content{
+    width:850px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    position:relative;
+    overflow:hidden;
+  }
+  .disciplines-section .tabs .tab-content .tab-image{
+      width:850px;
+    height: 500px;
+    background-image:url("https://emiliaapreda.co.uk/assets/img/design/220519_CamIMG_FinalBook_23.jpg");
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    transition:all 300ms ease-in-out;
+  }
+  
+  .disciplines-section .tabs .tab-indicator{
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    display: flex;
+    background:white;
+    transition: all 200ms ease-in-out;
+    
+  }
+  
+  body:has(.tab1:hover) .tab-indicator{
+
+  }
+  
+  body:has(.tab1:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/design/ui-ux/UI_Compliapps_Mob.jpg")
+  }
+  
+  body:has(.tab2:hover) .tab-indicator{
+
+  }
+  body:has(.tab2:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/design/3d-concepting/3D_AnnualReportConcept.jpg")
+  }
+  body:has(.tab3:hover) .tab-indicator{
+
+  }
+  body:has(.tab3:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/portraiture/160128_Lauren_Digital.jpg")
+  }
+  body:has(.tab4:hover) .tab-indicator{
+
+  }
+  body:has(.tab4:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/portraiture/200415_TaylorSwift_Painting.jpg")
+  }
+  body:has(.tab5:hover) .tab-indicator{
+
+  }
+  body:has(.tab5:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/portraiture/160530_Lauren.jpg")
+  }
+  body:has(.tab6:hover) .tab-indicator{
+
+  }
+  body:has(.tab6:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/portraiture/190807_NickJonas.jpg")
+  }
+  body:has(.tab7:hover) .tab-indicator{
+
+  }
+  body:has(.tab7:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/illustration/githedgehog.jpg")
+  }
+  body:has(.tab8:hover) .tab-indicator{
+
+  }
+  body:has(.tab8:hover) .tab-content .tab-image{
+    background-image:url("https://emiliaapreda.co.uk/assets/img/art/murals/Murals_Spongebob.jpg")
+  }
 /*=======Testimonials section - HOME PAGE=======*/
 .testimonials{
     padding: 100px 0% 100px 0%;
@@ -778,14 +894,16 @@ z-index: 1;
 }
 .testimonials-container{
     width: 90%;
+    height: 100%;
     max-width: 1000px;
-    padding: 40px 0 0 0;
+    padding: 40px 0 10% 0;
 }
 .testimonial-card{
     padding: 0 60px 0 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+
     
 }
 .testimonial-quote {
@@ -799,25 +917,43 @@ z-index: 1;
     font-size: 70px;
 }
 .testimonial-desc{
-    margin-bottom:20px;
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom:10px;
     text-align: left;
     color: white;
     }
+
+    .testimonial-desc-smaller{
+        font-size: 0.85rem;
+        line-height: 1.35;
+        margin: 0%;
+        margin-bottom:10px;
+        text-align: left;
+        color: white;
+        }
+
 .testimonial-date{
     font-size: 1rem;
+    margin-top: 1rem;
 }
 .testimonial-profile{
     display: flex;
-    align-items: center;
-    column-gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 1.2rem;
     padding-top: 20px;
     color: white;
 }
-.testimonial-profile-img{
+.testimonial-profile-img-rounded{
     width: 60px;
     height: 60px;
     border-radius: 3rem;
     object-fit: cover;
+}
+.testimonial-profile-img{
+    width: 140px;
+
 }
 .testimonial-profile-name{
     font-weight: 700;
@@ -834,36 +970,46 @@ z-index: 1;
         margin:0 0;
     }
     }  
+
 @media (max-width: 950px){
     .testimonials{
         padding: 50px 0% 50px 0%;
     }
-.testimonials-container{
-    width: 95%;
+    .testimonials-container{
+        width: 95%;
+    }
+    .section-title{
+        text-align: left;
+        padding-left: 10%;
+    }
+    .testimonial-desc-smaller{
+        font-size: 0.80rem;
+    }
 }
-.section-title{
-    text-align: left;
-    padding-left: 10%;
-}
+@media (max-width: 700px){
+    .testimonial-desc-smaller{
+        font-size: 0.75rem;
+    }
 }
 @media (max-width: 600px){
-.testimonials{
+    .testimonials{
         padding: 50px 0% 50px 0%;
-}
-.swiper-button-next{
-    display: none;
-}
-.swiper-button-prev{
-    display: none;
-}
-.testimonial-card{
-    padding: 1rem 1rem 2rem 1rem;
-}
-.section-title{
+    }
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .testimonial-card{
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .section-title{
         text-align: left;
         padding-left: 5%;
+    }
 }
-}
+
 /*========================CLIENTS - HOME PAGE===================*/
 .client-section{
     background-color: var(--button-color);
