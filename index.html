@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--===============SWIPER CSS================-->
-<link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 <!--===============MAIN CSS================-->
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -19,14 +22,14 @@
     
         <div class="logo">
             <link to="/" class="link-home">
-                <img class="logo-img" src="assets/img/LOGO_WEBSITE WHITE.png"/>
+                <img class="logo-img" src="assets/img/EA_LOGO_WEB_WHITE.png"/>
             </link>
             <span class="site-name"><a  href="/index.html">EMILIA<br>APREDA</a></span>
         </div>    
         <nav>
             <ul class="nav-menu">
                 <li class="work"><a href="/work.html">WORK</a>
-                  <ul class="work-drop-down">
+                  <!-- <ul class="work-drop-down">
                     <li><a href="#">WEB DESIGN</a></li>
                     <li><a href="#">MOTION GRAPHICS</a></li>
                     <li><a href="#">BRANDING</a></li>
@@ -36,7 +39,7 @@
                     <li><a href="#">REPORT DESIGN</a></li>
                     <li><a href="#">3D DESIGN</a></li>
                     <li><a href="#">PERSONAL ART</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
                 <li><a href="/contact.html">CONTACT</a></li>
               </ul>
@@ -47,7 +50,7 @@
         </button>
         <ul class="mobile-menu">
             <li class="menu-item"><a  href="/work.html">WORK</a>
-                <ul class="mob-sub-menu">
+                <!-- <ul class="mob-sub-menu">
                     <li><a href="">WEB DESIGN</a></li>
                     <li><a href="#">MOTION GRAPHICS</a></li>
                     <li><a href="#">BRANDING</a></li>
@@ -57,7 +60,7 @@
                     <li><a href="#">REPORT DESIGN</a></li>
                     <li><a href="#">3D DESIGN</a></li>
                     <li><a href="#">PERSONAL ART</a></li>
-                </ul>
+                </ul> -->
             </li>
             <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>   
     
@@ -76,68 +79,104 @@
 <!--===============MAIN================-->
 <main class="main home">
     <!--=========HERO==========-->    
-    <div class="hero-homepage">
-        <div class="hero-tagline"><h1>IDEATION TO <br><strong>CREATION</strong></h1><br><h2>Multimedia<br>Graphic Design</h2>
-        <a href="/work.html" ><button class="hero-button button">VIEW WORK</button></a>
-    </div>
-
+    <div class="home-hero">
+        <div class="hero__content">
+          <div class="hero__headline">
+            <h1>IDEATION TO <br><strong>CREATION</strong></h1>
+          </div>
+          <div class="hero__subtitle">
+            <h2>UK Based Innovative Freelance Multimedia Graphic Designer.</h2>
+          </div>
+          <div class="hero__button">
+          <button class="button"><a href="/work.html">SEE WORK</a></button>
+          </div>
+        </div>
+      
         <video id="hero-background-video" autoplay loop muted poster="assets/img/EA_LOGO_3D_animated_still.jpg">
-            <source src="assets/img/EA_LOGO_3D_animated2.mp4" type="video/mp4">
+          <source src="assets/img/EA_LOGO_3D_animated2.mp4" type="video/mp4">
         </video>
-
-    </div>
+      
+      </div>
+      
+<div class="blur-banner">
+</div>
     <!--=========SERVICES==========--> 
     <div class="welcome-section">
         <h1 class="h1-welcome">WELCOME</h1>
-        <p class="welcome-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quibusdam quaerat deleniti omnis ipsam alias nisi porro aspernatur excepturi in tempora suscipit doloribus, ullam quisquam beatae non similique. Illo sunt sit dolor mollitia magnam optio, consectetur repudiandae iusto quibusdam fugiat dolorem in odio nisi, soluta harum ipsam veniam illum eligendi.</p>
+        <p class="welcome-p">I am an ambitious multimedia graphic designer from the North East of England, with experience of designing for coporations big and small worldwide.
+            <br><br>
+        Starting out as a self-taught portrait artist, I have expertise in many creative feilds including portraiture,mural work, character design, illustration, animation and much more.
+        <br><br>
+        Contact me if you are interested in collaborating or have any questions.
+        </p>
+        <div class="hero__button">
+            <button class="button"><a href="/contact.html">CONTACT</a></button>
+        </div>
     </div>
     <!--=========DISCIPLINES==========--> 
-    <div class="disciplines-section">
-        <div class="tabs">
-            <div class="tab-indicator"></div>
-            <div class="tab-header">
-              <div class="tab1">
-                  <a href="/">WEB DESIGN</a>
+    
+
+
+<div class="home-what-we-do">
+  <div class="what-we-do__content">
+    <div class="what-we-do__container">
+      <div class="what-we-do__title"><h3>WHAT I DO</h3></div>
+
+      <div class="swiper homepage_swiper">
+<div class="swiper-button-prev"></div>
+        <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-1-1.jpg" />
               </div>
-              <div class="tab2">
-                <a href="/">MOTION GRAPHICS</a>
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-2.jpg" />
               </div>
-              <div class="tab3">
-                <a href="/">BRANDING</a>
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-3.jpg" />
               </div>
-              <div class="tab4">
-                <a href="/">EVENT DESIGN</a>
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-4.jpg" /> 
               </div>
-                  <div class="tab5">
-                <a href="/">ILLUSTRATION</a>
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-1-1.jpg" />
               </div>
-                  <div class="tab6">
-                <a href="/">PRINT MEDIA</a>
+              <div class="swiper-slide">
+                  <img src="assets/img/Web-2.jpg" />
               </div>
-                  <div class="tab7">
-                <a href="/">REPORT DESIGN</a>
-              </div >
-                  <div class="tab8">
-                <a href="/">3D DESIGN</a>
-              </div>
-            </div>
-            <div class="tab-content">
-              <div class="tab-image"></div>
-             
-            </div>
-          
-          
-          </div>
-    </div>
+
+        </div>
+
+<div class="swiper-button-next"></div>
+        
+     </div>
+     <div class="what-we-do__disciplines">
+                  <h3> <a href="work.html">Web Design</a></h3>
+                  <h3> <a href="work.html">3D DESIGN </a></h3>
+                  <h3> <a href="work.html">MOTION GRAPHICS</a></h3>
+                  <h3> <a href="work.html">ILLUSTRATION</a></h3>
+                  <h3> <a href="work.html">BRANDING</a></h3>
+                  <h3> <a href="work.html">PRINT MEDIA</a></h3>
+
+        </div> 
+    </div> 
+      
+      
+  </div>
+</div>
+
+
+
+      
+  </div>
+</div>
     
     <!--======TESTIMONIALS=========--> 
-    <section class="testimonials section">
+    <section class="testimonials section" id="testimonials">
         <h1 class="section-title">TESTIMONIALS</h1>
-        <!--======swiper========={https://swiperjs.com/swiper-api}--> 
-         <div class="testimonials-container swiper">
-            <div class="swiper-wrapper"> 
-                <!--======swiper-slide1=========--> 
-                <div class="testimonial-card swiper-slide">
+         <div class="testimonials-container">
+            <div> 
+                <div class="testimonial-card ">
                     <div class="testimonial-quote">
                         <i class="fa-sharp fa-solid fa-quote-left"></i>
                     </div>
@@ -160,35 +199,7 @@
                             <span class="testimonial-profile-name">Ange Decorde</span><br>
                             <span class="testimonial-profile-detail">Marketing Manager, Cityscape - Dubai</span></div> </div>
             </div>
-                <!--======swiper-slide2=========--> 
-                <div class="testimonial-card swiper-slide">
-                    <div class="testimonial-quote">
-                        <i class="fa-sharp fa-solid fa-quote-left"></i>
-                    </div>
-                    <p class="testimonial-desc-smaller">
-                        I had the pleasure of working with Emilia on a brand revamp for Cityscape Bahrain and Cityscape Qatar and I couldn't be more delighted with the results. Emilia's dedication, creativity, and problem-solving skills were instrumental in making our project a resounding success.
-                        </p>
-                        <p class="testimonial-desc-smaller">
-                        Emilia's expertise shone through as she beautifully designed our outdoor campaign, on-site signage, and co-located branding with Jewellery Arabia. Her attention to detail and commitment to bringing our vision to life were truly commendable.
-                        </p>
-                        <p class="testimonial-desc-smaller">
-                        What sets Emilia apart is not just her design skills but her remarkable patience and willingness to go the extra mile to ensure our satisfaction. She's not only a talented graphic designer but also an excellent collaborator who listens, adapts, and delivers beyond expectations.
-                        </p>
-                        <p class="testimonial-desc-smaller">
-                        I wholeheartedly recommend Emilia to anyone seeking top-notch graphic design services. Her work has elevated our brand, and I am grateful to have had the opportunity to work with such a talented and professional designer.
-                    </p>
-                    <h3 class="testimonial-date">OCT 2023</h3>
-                    <div class="testimonial-profile testimonial-profile2">
-                        <img src="assets/img/Testimonial_Cityscapelogo.png" alt="" class="testimonial-profile-img "/>
-                        <div class="testimonial-profile-data">
-                            <span class="testimonial-profile-name">Ange Decorde</span><br>
-                            <span class="testimonial-profile-detail">Marketing Manager, Cityscape - Dubai</span></div> </div>
-            </div>
-         </div>
-            <div class="swiper-pagination"></div>            
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
+
 
     </section>
 <!--=========CLIENTS==========--> 
@@ -210,7 +221,7 @@
                 <div class="contact-info">
                     <h2 class="contact-title">SAY HELLO</h2>
                     <a target="_blank" class="contact-email" href="mailto:hello@EmiliaApreda.co.uk">hello@EmiliaApreda.co.uk</a>
-                    <img class="footer-logo" src="assets/img/EA_LOGO_WEB_WHITE.png"> 
+                    <img class="footer-logo" src="/assets/img/EA_LOGO_WEB_WHITE.png"> 
                 </div>
             </div>
 
@@ -218,15 +229,15 @@
             <div class="footer-right">
                 <div class="footer-links">
                     <div class="footer-home-links">
-                        <a href=""><h5 class="footer-link-titles">HOME</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">ABOUT</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">DISCIPLINES</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">TESTIMONIALS</h5></a>
+                        <a href="/"><h5 class="footer-link-titles">HOME</h5></a>
+                        <!-- <a href="/"><h5 class="footer-link-subtitles">ABOUT</h5></a>
+                        <a href=""><h5 class="footer-link-subtitles">DISCIPLINES</h5></a> -->
+                        <a href="/#testimonials"><h5 class="footer-link-subtitles">TESTIMONIALS</h5></a>
 
                     </div>
                     <div class="footer-work-links">
                         <a href=""><h5 class="footer-link-titles">WORK</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">WEB DESIGN</h5></a>
+                        <!-- <a href=""><h5 class="footer-link-subtitles">WEB DESIGN</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">MOTION GRAPHICS</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">BRANDING</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">EVENT GRAPHICS</h5></a>
@@ -234,22 +245,20 @@
                         <a href=""><h5 class="footer-link-subtitles">PRINT MEDIA</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">REPORT DESIGN</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">3D DESIGN</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">PERSONAL ART</h5></a>
+                        <a href=""><h5 class="footer-link-subtitles">PERSONAL ART</h5></a> -->
                     </div>
                     <div class="footer-contact-links">
-                        <a href=""><h5 class="footer-link-titles">CONTACT</h5></a>
+                        <a href="/contact.html"><h5 class="footer-link-titles">CONTACT</h5></a>
                         <h5 class="footer-link-subtitles nolink">EMAIL ME:</h5>
-                        <a href=""><h5 class="footer-link-subtitles">hello@EmiliaApreda.co.uk</h5></a>
+                        <a href="mailto:hello@emiliaapreda.co.uk"><h5 class="footer-link-subtitles">hello@EmiliaApreda.co.uk</h5></a>
                         <div class="footer-socials">
-                <a href="https://www.facebook.com/EmiliaApreda/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/e.a.create/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/emilia-apreda-091561197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/emyapr" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
-                </div>
+                            <a href="https://www.facebook.com/EmiliaApreda/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/e.a.create/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/emilia-apreda-091561197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/emyapr" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
-
-                
             </div>
             
         </div>
@@ -262,7 +271,8 @@
 </main>    
     <!--===============MAIN JS================-->        
     <script src="assets/js/mobileMenu.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/Swiper.js"></script>
     <script src="assets/js/main.js"></script>  
     
     <!--===============UNICONS================-->

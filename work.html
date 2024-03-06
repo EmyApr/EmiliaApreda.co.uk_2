@@ -28,8 +28,8 @@
     <nav>
         <ul class="nav-menu">
             <li class="work"><a href="/work.html">WORK</a>
-              <ul class="work-drop-down">
-                <li><a href="#">WEB DESIGN</a></li>
+              <!-- <ul class="work-drop-down">
+                <li><a href="work.html" class="filter-button" data-name="web">WEB DESIGN</a></li>
                 <li><a href="#">MOTION GRAPHICS</a></li>
                 <li><a href="#">BRANDING</a></li>
                 <li><a href="#">EVENT DESIGN</a></li>
@@ -38,7 +38,7 @@
                 <li><a href="#">REPORT DESIGN</a></li>
                 <li><a href="#">3D DESIGN</a></li>
                 <li><a href="#">PERSONAL ART</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li><a href="/contact.html">CONTACT</a></li>
           </ul>
@@ -49,7 +49,7 @@
     </button>
     <ul class="mobile-menu">
         <li class="menu-item"><a  href="/work.html">WORK</a>
-            <ul class="mob-sub-menu">
+            <!-- <ul class="mob-sub-menu">
                 <li><a href="">WEB DESIGN</a></li>
                 <li><a href="#">MOTION GRAPHICS</a></li>
                 <li><a href="#">BRANDING</a></li>
@@ -59,7 +59,7 @@
                 <li><a href="#">REPORT DESIGN</a></li>
                 <li><a href="#">3D DESIGN</a></li>
                 <li><a href="#">PERSONAL ART</a></li>
-            </ul>
+            </ul> -->
         </li>
         <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>   
 
@@ -86,14 +86,68 @@
         <!-- filter buttons -->
         <div class="filter-buttons">
             <button class="filter-button active" data-name="all">Show all</button>
-            <button class="filter-button" data-name="ui-ux">UI-UX</button>
+            <button class="filter-button" id="web" data-name="web">Web Design</button>
             <button class="filter-button" data-name="3d">3D</button>
-            <button class="filter-button" data-name="print">Print</button>
+            <button class="filter-button" data-name="event">EVENT DESIGN</button>
+            <button class="filter-button" data-name="ill">ILLUSTRATION</button>
         </div>
 
         <!-- Image Cards -->
         <div class="work-grid">
-            <a href="work-bullet.html" class="no-show" data-name="3d">
+            <a href="/work/3d_event-stand.html" class="no-show" data-name="3d">
+                <div class="card">
+                    <div class="card-pop-up">
+                        <div class="card-text">
+                            <p class="filter-cat">3D MODELLING</p>
+                            <h4 class="card-title">EVENT STAND 3D MODELS</h4>
+                            <p>I have produced graphics and 3d models for multiple events. Open to see more</p>
+                        </div>
+                        
+                    </div>
+                <img src="assets/img/3D_event-stands/event-stand_1.jpg" alt="Cityscape event stand"/>
+                </div>
+            </a>
+            
+            <a href="/work/ill_2d-chararcters.html" class="no-show" data-name="ill">
+                <div class="card">
+                    <div class="card-pop-up">
+                        <div class="card-text">
+                            <p class="filter-cat">ILLUSTRATION</p>
+                            <h4 class="card-title">2D Characters</h4>
+                            <p>For CNCF (Cloud Native Computing Foundation) I have created multiple 2D Character illustrations from given 3D models.</p>
+                        </div>
+                        
+                    </div>
+                <img src="assets/img/2D_characters/Tai_1K.jpg" alt="Tai the Elephant"/>
+                </div>
+            </a>
+            <a href="/work/event_cs-bah.html" class="no-show" data-name="event">
+                <div class="card">
+                    <div class="card-pop-up">
+                        <div class="card-text">
+                            <p class="filter-cat">EVENT DESIGN</p>
+                            <h4 class="card-title">CITYSCAPE BAHRAIN 2023</h4>
+                            <p>In 2023 I produced hundreds of event artwork collateral for the real estate event in Bahrain.</p>
+                        </div>
+                        
+                    </div>
+                <img src="assets/img/Event_cityscape/cityscape_1.jpg" alt="cityscape event banner"/>
+                </div>
+            </a>
+            <a href="/work/web_o3de.html" class="no-show" data-name="web">
+                <div class="card">
+                    <div class="card-pop-up">
+                        <div class="card-text">
+                            <p class="filter-cat">WEB DESIGN</p>
+                            <h4 class="card-title">O3DE WEBSITE</h4>
+                            <p>        O3DE is an open-source 3D engine, I was fortunate enough to play a key role in the team that created this website.</p>
+                        </div>
+                        
+                    </div>
+                <img src="assets/img/web_o3de/O3DE_Web.jpg" alt="o3de website"/>
+                </div>
+            </a>
+            <a href="/work/3d_bullet.html" class="no-show" data-name="3d">
                 <div class="card">
                     <div class="card-pop-up">
                         <div class="card-text">
@@ -107,60 +161,7 @@
                 </div>
             </a>
             
-            <a href="" class="no-show" data-name="3d">
-                <div class="card">
-                    <div class="card-pop-up">
-                        <div class="card-text">
-                            <p class="filter-cat">3D CONCEPTING</p>
-                            <h4 class="card-title">Compliapps</h4>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        
-                    </div>
-                <img src="assets/img/design/print-media/Print_Magazine.jpg" alt="Bullet Portrait"/>
-                </div>
-            </a>
-
-            <a href="" class="no-show" data-name="print">
-                <div class="card">
-                    <div class="card-pop-up">
-                        <div class="card-text">
-                            <p class="filter-cat">3D CONCEPTING</p>
-                            <h4 class="card-title">Compliapps</h4>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        
-                    </div>
-                <img src="assets/img/design/ui-ux/UI_GlobalFlix.jpg" alt="Restuarant Menu"/>
-                </div>
-            </a>
-
-            <a href="" class="no-show" data-name="ui-ux">
-                <div class="card">
-                    <div class="card-pop-up">
-                        <div class="card-text">
-                            <p class="filter-cat">3D CONCEPTING</p>
-                            <h4 class="card-title">Compliapps</h4>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        
-                    </div>
-                <img src="assets/img/design/ui-ux/UI_Compliapps_Mob.jpg" alt="Compliapps"/>
-                </div>
-            </a>
-            <a href="" class="no-show" data-name="ui-ux">
-                <div class="card">
-                    <div class="card-pop-up">
-                        <div class="card-text">
-                            <p class="filter-cat">3D CONCEPTING</p>
-                            <h4 class="card-title">Compliapps</h4>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        
-                    </div>
-                <img src="assets/img/art/murals/minion1.jpg" alt="Compliapps-mob"/>
-                </div>
-            </a>
+            
             
         </div>
     </div>
@@ -188,7 +189,7 @@
                 <div class="contact-info">
                     <h2 class="contact-title">SAY HELLO</h2>
                     <a target="_blank" class="contact-email" href="mailto:hello@EmiliaApreda.co.uk">hello@EmiliaApreda.co.uk</a>
-                    <img class="footer-logo" src="assets/img/EA_LOGO_WEB_WHITE.png"> 
+                    <img class="footer-logo" src="/assets/img/EA_LOGO_WEB_WHITE.png"> 
                 </div>
             </div>
 
@@ -196,15 +197,15 @@
             <div class="footer-right">
                 <div class="footer-links">
                     <div class="footer-home-links">
-                        <a href=""><h5 class="footer-link-titles">HOME</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">ABOUT</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">DISCIPLINES</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">TESTIMONIALS</h5></a>
+                        <a href="/"><h5 class="footer-link-titles">HOME</h5></a>
+                        <!-- <a href="/"><h5 class="footer-link-subtitles">ABOUT</h5></a>
+                        <a href=""><h5 class="footer-link-subtitles">DISCIPLINES</h5></a> -->
+                        <a href="/#testimonials"><h5 class="footer-link-subtitles">TESTIMONIALS</h5></a>
 
                     </div>
                     <div class="footer-work-links">
                         <a href=""><h5 class="footer-link-titles">WORK</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">WEB DESIGN</h5></a>
+                        <!-- <a href=""><h5 class="footer-link-subtitles">WEB DESIGN</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">MOTION GRAPHICS</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">BRANDING</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">EVENT GRAPHICS</h5></a>
@@ -212,22 +213,20 @@
                         <a href=""><h5 class="footer-link-subtitles">PRINT MEDIA</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">REPORT DESIGN</h5></a>
                         <a href=""><h5 class="footer-link-subtitles">3D DESIGN</h5></a>
-                        <a href=""><h5 class="footer-link-subtitles">PERSONAL ART</h5></a>
+                        <a href=""><h5 class="footer-link-subtitles">PERSONAL ART</h5></a> -->
                     </div>
                     <div class="footer-contact-links">
-                        <a href=""><h5 class="footer-link-titles">CONTACT</h5></a>
+                        <a href="/contact.html"><h5 class="footer-link-titles">CONTACT</h5></a>
                         <h5 class="footer-link-subtitles nolink">EMAIL ME:</h5>
-                        <a href=""><h5 class="footer-link-subtitles">hello@EmiliaApreda.co.uk</h5></a>
+                        <a href="mailto:hello@emiliaapreda.co.uk"><h5 class="footer-link-subtitles">hello@EmiliaApreda.co.uk</h5></a>
                         <div class="footer-socials">
-                <a href="https://www.facebook.com/EmiliaApreda/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/e.a.create/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/emilia-apreda-091561197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/emyapr" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
-                </div>
+                            <a href="https://www.facebook.com/EmiliaApreda/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/e.a.create/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/emilia-apreda-091561197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/emyapr" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
-
-                
             </div>
             
         </div>

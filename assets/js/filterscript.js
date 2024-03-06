@@ -1,4 +1,4 @@
-const filterButtons = document.querySelectorAll(".filter-buttons .filter-button");
+const filterButtons = document.querySelectorAll(".filter-button");
 const filterableCards = document.querySelectorAll(".no-show");
 
 
