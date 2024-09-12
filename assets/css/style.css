@@ -94,43 +94,51 @@ h1{
     font-family: var(--body-font);
     font-size: var(--h1-font-size);
     letter-spacing: var(--title-spacing);
-    font-weight: 800;    
+    font-weight: 800;   
+    cursor: default; 
 }
 h2{
     font-size: var(--h2-font-size);
     letter-spacing: var(--title-spacing);
-    font-weight: 650;}
+    font-weight: 650;
+    cursor: default;}
+    
 h3{
     font-size: var(--h3-font-size);
     letter-spacing: var(--title-spacing);
-    font-weight: 500;}
+    font-weight: 500;
+    cursor: default;}
 h4{
     font-size: var(--h4-font-size);
     letter-spacing: var(--title-spacing);
-    font-weight: 500;}
+    font-weight: 500;
+    cursor: default;}
 h5{
     font-size: var(--h5-font-size);
     letter-spacing: var(--title-spacing);
-    font-weight: 500;}
+    font-weight: 500;
+    cursor: default;}
 h6{
     font-size: var(--h6-font-size);
     letter-spacing: var(--title-spacing);
     font-weight: 700;
-    text-transform: uppercase;}   
+    text-transform: uppercase;
+    cursor: default;}   
 p, ul{
     font-size: var(--p-font-size);
-    letter-spacing: var(--body-spacing);}
+    letter-spacing: var(--body-spacing);
+    cursor: default;}
 .button{
-background-color: var(--button-color);
-padding:0.5rem 2rem;
-border-radius:3rem;
-border: 0;
-color: var(--white);
-font-family: "montserrat", sans-serif;
-font-size: 1rem;
-font-weight: 700;
-letter-spacing: 2px;
-text-transform: uppercase;        
+    background-color: var(--button-color);
+    padding:0.5rem 2rem;
+    border-radius:3rem;
+    border: 0;
+    color: var(--white);
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;        
 }
 .button:hover{
     background-color: var(--black);color: var(--white); cursor: pointer;
@@ -465,6 +473,7 @@ z-index: 1;
 .contact-header-container{
     height: 50vh;
     overflow: hidden;
+    cursor: default;
 }
 .h1-thin {
     font-family: var(--body-font);
@@ -475,6 +484,7 @@ z-index: 1;
     z-index: 2;
     color: white;
     margin-left: 10%;
+    cursor: default;
 }
 .h1-work {
     font-family: var(--body-font);
@@ -483,6 +493,7 @@ z-index: 1;
     position: relative;
     z-index: 2;
     color: white;
+    cursor: default;
 }
 .h1-thin-centered{
     font-family: var(--body-font);
@@ -493,6 +504,7 @@ z-index: 1;
     text-align: center;
     z-index: 2;
     color: white;
+    cursor: default;
 }
 .art-header-video video{
     z-index: 0;
@@ -755,6 +767,7 @@ z-index: 1;
     position: relative;
     z-index: 2;
     color: white;
+    cursor: default;
 }
 .welcome-p{
     font-size: 17px;
@@ -763,6 +776,7 @@ z-index: 1;
     color: white;
     max-width: 900px;
     text-align: center;
+    cursor: default;
 }
 @media (max-width: 900px){
     .welcome-section{
@@ -807,6 +821,7 @@ z-index: 1;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
+    cursor: default;
   }
   
   .home-what-we-do{
@@ -902,6 +917,7 @@ z-index: 1;
   letter-spacing: 0px;
   font-weight: 700;
   width: 100%;
+  
 }
 .what-we-do__disciplines h3:hover{
   color: #9747FF;
@@ -1049,6 +1065,7 @@ z-index: 1;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
+    cursor: default;
 }
 .testimonials-container{
     position: relative;
@@ -1194,6 +1211,7 @@ z-index: 1;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
+    cursor: default;
 }
 .client-section .client-image-banner{
     max-width: 900px;
@@ -1222,6 +1240,7 @@ z-index: 1;
 }
 .contact-form label{
     padding-top: 20px;
+    cursor: default;
 }
 .contact input{
     width: 800px;
@@ -1278,6 +1297,7 @@ z-index: 1;
     z-index: 2;
     color: rgb(255, 255, 255);
     padding-left: 10%;
+    cursor: default;
 }
 .workimgbanner{
     background-repeat: no-repeat;
@@ -1319,6 +1339,10 @@ z-index: 1;
 .work-indiv-pullout-section{
     border-left: 8px solid white;
     padding-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.work-text-section{
     margin-top: 20px;
 }
 .work-indiv-images-w300{
@@ -1429,6 +1453,7 @@ z-index: 1;
     border-bottom: 0.5px solid rgb(117, 117, 117);
     margin-bottom: 30px;
     font-size: 2.2rem;
+    cursor: default;
 }
 .p-work-introtext{
     color: white;
@@ -1436,8 +1461,21 @@ z-index: 1;
     font-size: 18px;
     line-height: 1.4;
     padding-bottom: 15px;
+    cursor: default;
+}
+.p-work-text{
+    color: white;
+    max-width: 760px;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-bottom: 15px;
 }
 .p-work-introtext a{
+    color: var(--button-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.p-work-text a{
     color: var(--button-color);
     font-weight: 600;
     text-decoration: underline;
@@ -1640,7 +1678,7 @@ color: var(--grey-light);
 }
 .copyright-line{
     color: white;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;   
     gap: 6px;
