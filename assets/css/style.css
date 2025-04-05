@@ -1305,6 +1305,13 @@ z-index: 1;
     background-position: 50%;
     background-color: #000000;
 }
+.workimgbanner2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: top;
+    background-color: #000000;
+}
 .workimg_3d_bullet{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url(/assets/img/design/3d-concepting/3D_BulletPortrait.jpg);
@@ -1324,6 +1331,11 @@ z-index: 1;
 .workimg_web_o3de{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url(/assets/img/web_o3de/web_o3de-banner.jpg);
+}
+
+.workimg_tv_vera{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(/assets/img/TV_VERA_cover.avif);
 }
 
 .work-indiv-section {
@@ -1406,7 +1418,12 @@ z-index: 1;
     flex-direction: column;
     gap: 30px;
 }
-
+.spacer100{
+    height: 100px;
+}
+.spacer50{
+    height: 50px;
+}
 .label{
     color: white;
     letter-spacing: 2px;
@@ -2024,4 +2041,117 @@ color: var(--grey-light);
 
 
 
+}
+
+.testimonials{
+    padding: 200px 10%;
+}
+
+.testimonials .testimonial-card{
+    background-color: #060606;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 25px 25px 35px 25px;
+}
+
+.testimonials .testimonial-card .testimonial-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.testimonials .testimonial-card .testimonial-header .testimonial-header-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.testimonials .testimonial-card .testimonial-header .testimonial-logo img{
+    height: 45px;
+    width: 100%;
+}
+
+.testimonials .testimonial-card .testimonial-header .testimonial-header-right .testimonial-date{
+    font-size: 14pt;
+    font-weight: 600;
+    letter-spacing: 20%;
+}
+
+.testimonials .testimonial-card .testimonial-header .testimonial-header-right .testimonial-enlarge-icon{
+    width: 15pt;
+}
+
+.testimonials .testimonial-card .testimonial-quote{
+    padding-bottom: 10px;
+    height: fit-content;
+}
+
+.testimonials .testimonial-card .testimonial-quote .testimonial-quote-text{
+    font-size: 11pt;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 5%;
+    line-height: 140%;
+    text-align: left;
+}
+
+.testimonials .testimonial-card .testimonial-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+    padding-top: 0;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    gap: 7px;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data .testimonial-profile-name{
+    font-size: 14pt;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data .testimonial-profile-detail{
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data .testimonial-tags{
+    padding-top: 25px;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data .testimonial-tags ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 15px;
+}
+
+.testimonials .testimonial-card .testimonial-profile-data .testimonial-tags ul li{
+    font-size: 10pt;
+    font-weight: 300;
+    letter-spacing: 10%;
+    line-height: 150%;
+}
+
+.testimonial-quotemark{
+    width: 120px;
+}
+.testimonial-quotemark img{
+    width: 90px;
+    object-fit: contain;
 }
